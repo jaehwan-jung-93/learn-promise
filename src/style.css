@@ -1,0 +1,30 @@
+html {
+    background-color: white;
+    height: 100%;
+  }
+  
+  body {
+    height: inherit;
+    background-color: #EC3535;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div {
+    display: inline-block;
+    font-size: 10rem;
+    display: flex;
+  }
+
+  img {
+      width: 36px;
+      height: 36px;
+      color: white;
+  }
+
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFF
+  }
