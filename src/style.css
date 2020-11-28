@@ -5,7 +5,7 @@ html {
   
   body {
     height: inherit;
-    background-color: #EC3535;
+    background-color: #ffffff;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -19,8 +19,8 @@ html {
   }
 
   img {
-      width: 36px;
-      height: 36px;
+      width: 100%;
+      height: 100%;
       color: white;
   }
 
