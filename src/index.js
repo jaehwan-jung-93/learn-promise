@@ -55,7 +55,7 @@ function fetchImg(imgPath) {
     })
 }
 
-fetchImg('https://www.pubg.com/wp-content/uploads/2020/07/banner.png').then(blobdata => {
+fetchImg('/src/img1.png').then(blobdata => {
     console.log(blobdata);
 }).catch (error => {
     console.log('There has been a problem with your fetch operation: ' + error.message);
