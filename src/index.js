@@ -35,21 +35,28 @@
 
 /* ************************************************** */
 
-fetch('https://jaehwan-jung-93.github.io/learn-promise/src/img1.png')
-.then(response => {
-    if(!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    else {
-        return response.blob();
-    }
-})
-.then(myBlob => {
-    let objectURL = URL.createObjectURL(myBlob);
-    let image = document.createElement('img');
-    image.src = objectURL;
-    document.body.appendChild(image);
-})
-.catch(error => {
+function fetchImg(imgPath) {
+    fetch(imgPath)
+    .then(response => {
+        if(!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        else {
+            return response.blob();
+        }
+    })
+    .then(myBlob => {
+        let objectURL = URL.createObjectURL(myBlob);
+        let image = document.createElement('img');
+        image.src = objectURL;
+        document.body.appendChild(image);
+
+        return myBlob;
+    })
+}
+
+fetchImg('src/img1.png').then(blobdata => {
+    console.log(blobdata);
+}).catch (error => {
     console.log('There has been a problem with your fetch operation: ' + error.message);
 });
