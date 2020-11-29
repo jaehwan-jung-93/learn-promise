@@ -35,7 +35,7 @@
 
 /* ************************************************** */
 
-fetch('learn-promise/src/img1.png')
+fetch('https://jaehwan-jung-93.github.io/learn-promise/src/img1.png')
 .then(response => {
     if(!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
