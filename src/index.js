@@ -35,12 +35,12 @@
 
 /* ************************************************** */
 
-fetch('img1.png').then(result => {
-    if(!result.ok) {
-        throw new Error(`HTTP error! status: ${result.status}`);
+fetch('img1.png').then(response => {
+    if(!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
     }
     else {
-        return result.blob();
+        return response.blob();
     }
 })
 .then(myBlob => {
