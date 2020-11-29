@@ -36,7 +36,7 @@
 /* ************************************************** */
 
 function fetchImg(imgPath) {
-    fetch(imgPath)
+    return fetch(imgPath)
     .then(response => {
         if(!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
