@@ -47,7 +47,7 @@ promise.then(result => {
 })
 .then(myBlob => {
     let objectURL = URL.createObjectURL(myBlob);
-    let image = document.createElementNS('img');
+    let image = document.createElement('img');
     image.src = objectURL;
     document.body.appendChild(image);
 })
