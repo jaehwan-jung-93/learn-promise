@@ -35,7 +35,8 @@
 
 /* ************************************************** */
 
-fetch('img1.png').then(response => {
+fetch('img1.png')
+.then(response => {
     if(!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
