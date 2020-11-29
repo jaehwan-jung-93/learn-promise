@@ -55,7 +55,7 @@ function fetchImg(imgPath) {
     })
 }
 
-fetchImg('/src/img1.png').then(blobdata => {
+fetchImg('/learn-promise/src/img1.png').then(blobdata => {
     console.log(blobdata);
 }).catch (error => {
     console.log('There has been a problem with your fetch operation: ' + error.message);
