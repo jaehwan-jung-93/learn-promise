@@ -35,9 +35,7 @@
 
 /* ************************************************** */
 
-let promise = fetch('img1.png');
-
-promise.then(result => {
+fetch('img1.png').then(result => {
     if(!result.ok) {
         throw new Error(`HTTP error! status: ${result.status}`);
     }
