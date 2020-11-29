@@ -35,7 +35,7 @@
 
 /* ************************************************** */
 
-fetch('img1.png')
+fetch('https://www.pubg.com/wp-content/uploads/2020/07/banner.png')
 .then(response => {
     if(!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
